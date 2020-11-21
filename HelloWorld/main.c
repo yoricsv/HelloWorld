@@ -6,7 +6,7 @@
   *                           The PREPROCESSOR DIRECTIVEs                                 *
   *****************************************************************************************
   *****************************************************************************************
-  *        #include (the preprocessor directive) - addict a code from other file;         *
+  *       #include (the preprocessor directive) - addict a code from another file;        *
   *****************************************************************************************
   *  <STDIO.H> - standard library of Input/Output function on C                           *
   *  <LOCALE.H> - standard library contain of different language symbols                  *
@@ -14,10 +14,8 @@
   *****************************************************************************************
 */
 // INCLUDES CODE BEGIN //
-
 #include <stdio.h>
 #include <locale.h>
-
 // INCLUDES CODE END //
 
 /*
@@ -32,7 +30,6 @@
   *****************************************************************************************
 */
 // MAIN FUNCTION BEGIN //
-
 int main(void)
 {
 	// CODE/INSTRUCTIONS BEGIN //
@@ -53,24 +50,20 @@ int main(void)
 
 /*
   *****************************************************************************************
-  *              CHANGE LOCALIZATION for right display local SYMBOLS                      *
+  *                CHANGE LOCALIZATION for right display local SYMBOLS                    *
   *****************************************************************************************
   *  SETLOCALE - function allow to use difference local symbols                           *
   *  LC_ALL (Locate Categories) - point out to switch all localization functions on       *
-  *  RU - switch all localization function on for Russian                                 *
+  *  Ru-RU - switch on all localization function on for Russian (Ru-RU by list of LCID)   *
   *****************************************************************************************
 */
 	// SET RIGHT LOCALIZATION BEGIN //
-
-	setlocale(LC_ALL, "ru_RU");
-
+	setlocale(LC_ALL, "Ru-RU");
 	// SET RIGHT LOCALIZATION END //
 
 	// CHECK APPLIED RIGHT RUSSIAN SYMBOLIC LOCALIZATION BEGIN //
-
 	printf("Привет, Мир!");
 	printf("\t<-- (There is text displayed use by Russian localization symbols set)\r\n");
-
 	// CHECK APPLIED RIGHT RUSSIAN SYMBOLIC LOCALIZATION END //
 
 /*
@@ -82,12 +75,9 @@ int main(void)
   *****************************************************************************************
 */
 	// CHECK OPERATION MAIN FUNCTION BEGIN //
-
 	return 0;
-
 	// CHECK OPERATION MAIN FUNCTION END //
 
 	// CODE/INSTRUCTIONS END //
 }
-
 // MAIN FUNCTION END //
