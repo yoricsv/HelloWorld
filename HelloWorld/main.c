@@ -37,20 +37,18 @@ int main(void)
   *****************************************************************************************
   *                              CHECK program operations                                 *
   *****************************************************************************************
-  *  printf - the function display our information on console;                            *
-  *  ( ... ) - there is contained the information what we wanna show                      *
+  * printf - the function display our information on console;                             *
+  * ( ... ) - there is contained the information what we wanna show                       *
   *****************************************************************************************
 */
 	// CHECK PROGRAM OPERATIONS BEGIN //
-
 	printf("Hello, World!");
 	printf("\t<-- (There is text displayed without changing localization set (Default))\r\n");
-
 	// CHECK PROGRAM OPERATIONS END //
 
 /*
   *****************************************************************************************
-  *                CHANGE LOCALIZATION for right display local SYMBOLS                    *
+  *            CHANGE LOCALIZATION for correctly displays of local SYMBOLS                *
   *****************************************************************************************
   *  SETLOCALE - function allow to use difference local symbols                           *
   *  LC_ALL (Locate Categories) - point out to switch all localization functions on       *
